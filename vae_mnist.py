@@ -17,6 +17,8 @@ from urllib.request import urlretrieve
 %matplotlib inline 
 seed = npr.RandomState(0)
 
+from loadMNIST import load_mnist, plot_images
+
 def diag_gaussian_log_density(x, mu, log_std):
     return np.sum(norm.logpdf(x, mu, np.exp(log_std)), axis=-1)
 
@@ -135,7 +137,6 @@ step_size = 0.001
 
 # Load MNIST
 print("Loading training data...")
-from loadMNIST import load_mnist
 N, train_images, train_labels, test_images, test_labels = load_mnist()
 def binarise(images):
     on = images > 0.5
@@ -202,8 +203,6 @@ pickle.dump(optimized_params, open("saved_params.p", "wb" ))
 ######## 3. Visualizing Posteriors and Exploring the Model ########
 
 ###############################################################################################################
-
-from loadMNIST import plot_images
 
 samples=np.random.randn(10,Dz)
 grscl_img = decoder(samples, opt_gen)
