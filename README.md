@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Implementation of Variational Autoencoder (VAE) on binarized MNIST digits, based on the paper "Auto-Encoding Variational Bayes" by Kingma and Welling (2013).
+Implementation of Variational Autoencoder (VAE) on binarized MNIST digits, based on the paper "Auto-Encoding Variational Bayes" by Kingma and Welling (2013). (Part of course assignment for STA414/STA2014 and CSC412/CSC2506, University of Toronto, Winter 2020)
 
 ## Dataset
 
@@ -16,6 +16,7 @@ Implementation of Variational Autoencoder (VAE) on binarized MNIST digits, based
 - Variational Autoencoder (VAE) architecture
 - Latent space: Gaussian distribution
 - Loss function: Evidence Lower Bound (ELBO)
+- Optimizer: Adam
 
 ## Tools
 
