@@ -14,11 +14,8 @@ Implementation of Variational Autoencoder (VAE) on binarized MNIST digits, based
 ## Implementation
 
 - Variational Autoencoder (VAE) architecture
-- Encoder: convolutional neural network
-- Decoder: transposed convolutional neural network
 - Latent space: Gaussian distribution
 - Loss function: Evidence Lower Bound (ELBO)
-- Optimization: Adam optimizer
 
 ## Tools
 
@@ -36,6 +33,7 @@ Implementation of Variational Autoencoder (VAE) on binarized MNIST digits, based
 
 - Python 3.x
 - NumPy
+- Autograd
 - Matplotlib (for visualization)
 
 Usage
